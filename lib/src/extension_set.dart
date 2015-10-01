@@ -7,6 +7,14 @@ class ExtensionSet {
   static ExtensionSet commonMark = new ExtensionSet._(
       [const FencedCodeBlockSyntax()], [new InlineHtmlSyntax()]);
 
+  static ExtensionSet pandoc = new ExtensionSet._([
+    const FencedCodeBlockSyntax(),
+    const HeaderWithIdSyntax(),
+    const SetextHeaderWithIdSyntax(),
+  ], [
+    new InlineHtmlSyntax()
+  ]);
+
   final List blockSyntaxes;
   final List inlineSyntaxes;
 

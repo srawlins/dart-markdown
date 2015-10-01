@@ -63,6 +63,8 @@ parameter. Right now there are two extension sets:
 
   * `new InlineHtmlSyntax()`
   * `const FencedCodeBlockSyntax()`
+* `ExtensionSet.pandoc` includes four extensions. The list brings this package's
+  Markdown parsing closer to what is found in [Pandoc].
 
 ### Custom syntax extensions
 
@@ -80,5 +82,6 @@ void main() {
 
 [Perl Markdown]: http://daringfireball.net/projects/markdown/
 [CommonMark]: http://commonmark.org/
+[Pandoc]: http://pandoc.org/
 [commonMark-raw-html]: http://spec.commonmark.org/0.22/#raw-html
 [pandoc-auto_identifiers]: http://pandoc.org/README.html#extension-auto_identifiers
