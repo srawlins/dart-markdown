@@ -65,6 +65,13 @@ class Text implements Node {
   String get textContent => text;
 }
 
+class UnparsedContent implements Node {
+  final String content;
+  UnparsedContent(this.content);
+
+  void accept(NodeVisitor visitor) => null;
+}
+
 /// Visitor pattern for the AST.
 ///
 /// Renderers or other AST transformers should implement this.
